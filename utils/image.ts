@@ -9,35 +9,17 @@
  * @returns The optimized wsrv.nl URL in production, or the original path in development.
  */
 export function getOptimizedImageUrl(src: string, width: number, height?: number): string {
-  // If we are in Next.js development environment, return the local asset path immediately
   if (process.env.NODE_ENV === 'development') {
     return src;
   }
 
-  if (typeof window === 'undefined') return src;
-
-  const { hostname, origin } = window.location;
-
-  // Detect local environments: localhost, loopbacks, local domains, or private IPs
-  const localHosts = ['localhost', '127.0.0.1', '[::1]', '::1', '0.0.0.0'];
-  const isLocal =
-    localHosts.includes(hostname) ||
-    hostname.endsWith('.local') ||
-    hostname.endsWith('.localhost') ||
-    hostname.startsWith('192.168.') ||
-    hostname.startsWith('10.') ||
-    hostname.startsWith('172.16.') ||
-    /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(hostname) ||
-    !src.startsWith('/');
-
-  if (isLocal) {
+  if (typeof window === 'undefined') {
     return src;
   }
 
-  // Prepend origin to get an absolute URL that wsrv.nl can fetch from the public web
+  const { origin } = window.location;
   const absoluteUrl = `${origin}${src}`;
   
-  // Construct the wsrv.nl optimized URL
   let optimizedUrl = `https://wsrv.nl/?url=${encodeURIComponent(absoluteUrl)}&w=${width}`;
   if (height) {
     optimizedUrl += `&h=${height}&fit=cover`;
