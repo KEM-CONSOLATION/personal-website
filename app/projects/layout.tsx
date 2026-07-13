@@ -25,9 +25,46 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.jeremy0x.dev/projects/#webpage",
+      url: "https://www.jeremy0x.dev/projects",
+      name: "Projects by Jeremiah Aworetan | Product Engineering Portfolio",
+      description:
+        "Explore Jeremiah Aworetan's end-to-end product builds spanning crypto, fintech, and consumer web experiences.",
+      isPartOf: { "@id": "https://www.jeremy0x.dev/#website" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.jeremy0x.dev/projects/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.jeremy0x.dev",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Projects",
+          item: "https://www.jeremy0x.dev/projects",
+        },
+      ],
+    },
+  ],
+};
+
 export default function ProjectsLayout({ children }: { children: ReactNode }) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumbs
         items={[
           { name: "Home", item: "/" },

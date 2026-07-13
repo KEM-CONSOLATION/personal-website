@@ -23,6 +23,25 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://www.jeremy0x.dev/contact/#webpage",
+  url: "https://www.jeremy0x.dev/contact",
+  name: "Contact Jeremiah Aworetan",
+  description:
+    "Get in touch with Jeremiah Aworetan for frontend engineering opportunities, collaborations, or speaking engagements.",
+  isPartOf: { "@id": "https://www.jeremy0x.dev/#website" },
+};
+
 export default function ContactLayout({ children }: { children: ReactNode }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {children}
+    </>
+  );
 }
