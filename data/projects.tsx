@@ -74,22 +74,6 @@ export const projectsData: ProjectData[] = [
   },
 
   {
-    name: "RoomLink",
-    link: "https://roomlinkng.com/",
-    description:
-      "Nigeria's agent-free property rental platform connecting verified landlords and renters.",
-    detailedDescription:
-      "An agent-free rental platform in Nigeria that directly connects verified landlords and renters, facilitating verified listings, secure in-app monthly payments, and direct messaging to eliminate middleman fees.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/roomlink.jpg",
-  },
-
-  {
     name: "Lync",
     link: "https://thelync.app",
     description: "Landing page for Lync product.",
@@ -138,6 +122,23 @@ export const projectsData: ProjectData[] = [
   },
 
   {
+    name: "Paycrest",
+    link: "https://paycrest.io",
+    description:
+      "Core business infrastructure for Paycrest, spanning their marketing website and merchant operations dashboard.",
+    detailedDescription:
+      "Crafted Paycrest's end-to-end customer-facing rails, including the high-converting marketing website and the core Remix-based operations dashboard tracking merchant transactions, settlements, and liquidity flows.",
+    logos: [
+      <SiNextdotjs key="next.js" className="text-lg" title="Next.js" />,
+      <SiRemix key="remix" className="text-sm" title="Remix JS" />,
+      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
+      <BiLogoTypescript key="typescript" title="TypeScript" />,
+      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
+    ],
+    imageSrc: "/projects/paycrest.jpg",
+  },
+
+  {
     name: "Surgechain",
     link: "https://app.surgechain.io",
     description:
@@ -167,21 +168,6 @@ export const projectsData: ProjectData[] = [
       <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
     ],
     imageSrc: "/projects/noblocks-blog.jpg",
-  },
-
-  {
-    name: "Paycrest Landing Page",
-    link: "https://paycrest.io",
-    description: "Marketing site introducing Paycrest's payments platform.",
-    detailedDescription:
-      "High-converting landing page that explains Paycrest's crypto-to-fiat infrastructure, highlights instant settlement benefits, and funnels prospects into demos. Built with Next.js, Tailwind CSS, TypeScript, and Framer Motion for polished storytelling.",
-    logos: [
-      <SiNextdotjs key="next.js" className="text-lg" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/paycrest.jpg",
   },
 
   {
@@ -233,18 +219,19 @@ export const projectsData: ProjectData[] = [
   },
 
   {
-    name: "Paycrest Dashboard",
-    link: "https://app.paycrest.io",
-    description: "Operations console for Paycrest's crypto-to-fiat rails.",
+    name: "RoomLink",
+    link: "https://roomlinkng.com/",
+    description:
+      "Nigeria's agent-free property rental platform connecting verified landlords and renters.",
     detailedDescription:
-      "Operations workspace for Paycrest that tracks settlements, liquidity, compliance states, and merchant activity while orchestrating the crypto-to-fiat bridge in real time. Includes wallets overview, analytics, and payout tooling.",
+      "An agent-free rental platform in Nigeria that directly connects verified landlords and renters, facilitating verified listings, secure in-app monthly payments, and direct messaging to eliminate middleman fees.",
     logos: [
-      <SiRemix className="text-sm" key="remix" title="Remix JS" />,
+      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
       <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
       <BiLogoTypescript key="typescript" title="TypeScript" />,
       <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
     ],
-    imageSrc: "/projects/paycrest-dashboard.jpg",
+    imageSrc: "/projects/roomlink.jpg",
   },
 
   {
@@ -263,20 +250,18 @@ export const projectsData: ProjectData[] = [
   },
 
   {
-    name: "Qari",
-    link: "https://qariworld.com",
-    githubLink: "https://github.com/jeremy0x/project-qari",
-    description: "Premium ride-hailing waitlist site centered on fair pricing.",
+    name: "$Dogatoshi",
+    link: "https://dogatoshi.jeremy0x.dev/",
+    githubLink: "https://github.com/jeremy0x/dogatoshi",
+    description: "Informative website for $Dogatoshi meme coin community.",
     detailedDescription:
-      "Marketing site for Qari, the Lagos-based ride-hailing platform promising clean vehicles, transparent fixed fares, rider rewards, and WhatsApp-first driver support—designed to grow the waitlist and spotlight its low-commission model.",
+      "Community website providing project information and details. Built with JavaScript and Tailwind CSS with an engaging, energetic UI.",
     logos: [
-      <SiVite className="text-xl" key="vite" title="Vite" />,
-      <BiLogoReact key="react" title="React" />,
+      <BiLogoJavascript key="js" title="JavaScript" />,
+      <BiLogoHtml5 key="html" title="HTML" />,
       <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
     ],
-    imageSrc: "/projects/qari.jpg",
+    imageSrc: "/projects/dogatoshi.jpg",
   },
 
   {
@@ -293,35 +278,5 @@ export const projectsData: ProjectData[] = [
       <SiGreensock key="greensock" title="GSAP" />,
     ],
     imageSrc: "/projects/sentfi.jpg",
-  },
-
-  {
-    name: "Elder Wallet",
-    link: "https://elderwallet.jeremy0x.dev",
-    githubLink: "https://github.com/jeremy0x/elder-wallet",
-    description: "Proof of concept Bitcoin wallet with Runes Network support.",
-    detailedDescription:
-      "Bitcoin wallet demo showcasing Runes Network protocol integration. Features user-friendly interface for managing Bitcoin and Runes assets.",
-    logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-    ],
-    imageSrc: "/projects/elder-wallet.jpg",
-  },
-
-  {
-    name: "$Dogatoshi",
-    link: "https://dogatoshi.jeremy0x.dev/",
-    githubLink: "https://github.com/jeremy0x/dogatoshi",
-    description: "Informative website for $Dogatoshi meme coin community.",
-    detailedDescription:
-      "Community website providing project information and details. Built with JavaScript and Tailwind CSS with an engaging, energetic UI.",
-    logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-    ],
-    imageSrc: "/projects/dogatoshi.jpg",
   },
 ];
