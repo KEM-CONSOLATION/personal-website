@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 import { useMediaQuery } from "@/utils/useMediaQuery";
 import { ProjectData } from "@/types";
+import { getOptimizedImageUrl } from "@/utils/image";
 
 interface TechStackIconsProps {
   logos: JSX.Element[];
@@ -54,7 +55,7 @@ function TechStackIcons({ logos }: TechStackIconsProps) {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="flex-shrink-0 cursor-pointer transition-transform hover:scale-105">
+            <div className="shrink-0 cursor-pointer transition-transform hover:scale-105">
               {logo}
             </div>
             <AnimatePresence mode="wait">
@@ -160,7 +161,7 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               <div className="space-y-6">
                 <div className="relative aspect-video w-full overflow-hidden rounded-lg">
                   <Image
-                    src={project.imageSrc}
+                    src={getOptimizedImageUrl(project.imageSrc, 800, 450)}
                     alt={`${project.name} screenshot`}
                     fill
                     className="object-cover object-top"

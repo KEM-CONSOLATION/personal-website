@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { ProjectModal } from "@/components";
 import { ProjectData } from "@/types";
 import { projectsData } from "@/data/projects";
+import { getOptimizedImageUrl } from "@/utils/image";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -37,6 +38,7 @@ export default function Projects() {
 
   useLayoutEffect(() => {
     const mql = window.matchMedia("(max-width: 639px)");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMobile(mql.matches);
 
     const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
@@ -184,7 +186,7 @@ function ProjectCard({ project, index, onClick }: ProjectCardProps) {
           alt={`${name} screenshot`}
           width={575}
           height={575}
-          src={imageSrc}
+          src={getOptimizedImageUrl(imageSrc, 575, 575)}
           priority={index === 0}
           sizes="(min-width: 1024px) 575px, 100vw"
           fetchPriority={index === 0 ? "high" : "auto"}
