@@ -171,23 +171,6 @@ export const projectsData: ProjectData[] = [
   },
 
   {
-    name: "Shape Up Fitness",
-    link: "https://shapeupfitnessonline.com",
-    githubLink: "https://github.com/jeremy0x/project-suf",
-    description: "Platform showcasing fitness services and gym facilities.",
-    detailedDescription:
-      "Information platform for Shape Up Fitness gym. Features facility showcases, service listings, schedules, and trainer profiles. Built with React, TypeScript, Vite, and Framer Motion.",
-    logos: [
-      <SiVite key="vite" title="Vite" />,
-      <BiLogoReact key="react" title="React" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/shape-up-fitness.jpg",
-  },
-
-  {
     name: "AI Titans",
     link: "https://t.me/AI_Titans_bot",
     description: "Battle-focused tap-to-earn RPG built as a Telegram Mini App.",
@@ -201,6 +184,21 @@ export const projectsData: ProjectData[] = [
       <BiLogoTelegram key="telegram" title="Telegram Mini Apps SDK" />,
     ],
     imageSrc: "/projects/ai-titans.jpg",
+  },
+
+  {
+    name: "$Dogatoshi",
+    link: "https://dogatoshi.jeremy0x.dev/",
+    githubLink: "https://github.com/jeremy0x/dogatoshi",
+    description: "Informative website for $Dogatoshi meme coin community.",
+    detailedDescription:
+      "Community website providing project information and details. Built with JavaScript and Tailwind CSS with an engaging, energetic UI.",
+    logos: [
+      <BiLogoJavascript key="js" title="JavaScript" />,
+      <BiLogoHtml5 key="html" title="HTML" />,
+      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
+    ],
+    imageSrc: "/projects/dogatoshi.jpg",
   },
 
   {
@@ -235,6 +233,24 @@ export const projectsData: ProjectData[] = [
   },
 
   {
+    name: "Shape Up Fitness",
+    link: "https://shapeupfitnessonline.com",
+    githubLink: "https://github.com/jeremy0x/project-suf",
+    description:
+      "Fitness platform with integrated shopping management and admin dashboard features.",
+    detailedDescription:
+      "Information and business platform for Shape Up Fitness gym. Features facility showcases, schedules, trainer profiles, shopping management capabilities, and admin features.",
+    logos: [
+      <SiVite key="vite" title="Vite" />,
+      <BiLogoReact key="react" title="React" />,
+      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
+      <BiLogoTypescript key="typescript" title="TypeScript" />,
+      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
+    ],
+    imageSrc: "/projects/shape-up-fitness.jpg",
+  },
+
+  {
     name: "Salvage Yard Store",
     link: "https://salvageyard.jeremy0x.dev/",
     description: "Dual-sided e-commerce platform for electronic devices.",
@@ -247,21 +263,6 @@ export const projectsData: ProjectData[] = [
       <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
     ],
     imageSrc: "/projects/salvage-yard-store.jpg",
-  },
-
-  {
-    name: "$Dogatoshi",
-    link: "https://dogatoshi.jeremy0x.dev/",
-    githubLink: "https://github.com/jeremy0x/dogatoshi",
-    description: "Informative website for $Dogatoshi meme coin community.",
-    detailedDescription:
-      "Community website providing project information and details. Built with JavaScript and Tailwind CSS with an engaging, energetic UI.",
-    logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-    ],
-    imageSrc: "/projects/dogatoshi.jpg",
   },
 
   {
