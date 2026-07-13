@@ -20,10 +20,10 @@
     "lint": "eslint . --max-warnings=0"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.3",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
-    "@tailwindcss/postcss": "^4.2.3",
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -55,7 +55,12 @@
       "flatted": "3.4.2",
       "tar": ">=7.5.2",
       "js-yaml": ">=4.1.1"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@tsparticles/engine",
+      "sharp",
+      "unrs-resolver"
+    ]
   },
   "overrides": {
     "@types/react": "19.2.14",
