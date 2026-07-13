@@ -18,8 +18,10 @@ export const Preloader = () => {
     const hasSeenAnimation = sessionStorage.getItem(PRELOADER_SESSION_KEY);
 
     if (hasSeenAnimation) {
-      setIsLoading(false);
-      setShouldRender(false);
+      setTimeout(() => {
+        setIsLoading(false);
+        setShouldRender(false);
+      }, 0);
       return;
     }
 

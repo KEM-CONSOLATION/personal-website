@@ -25,6 +25,7 @@ export const EasterEggHints = () => {
 
   useEffect(() => {
     if (birthdayParam || isBirthday) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setBirthdayTriggered(true);
     }
   }, [birthdayParam, isBirthday]);

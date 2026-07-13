@@ -60,10 +60,6 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#171717" },
-  ],
   twitter: {
     card: "summary_large_image",
     site: "@thejeremy0x",
@@ -78,6 +74,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#171717" },
+  ],
 };
 
 const jsonLd = {
