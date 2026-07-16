@@ -8,6 +8,7 @@ import {
   SiFramer,
   SiGoogleplay,
   SiNextdotjs,
+  SiPostgresql,
   SiSanity,
 } from "react-icons/si";
 
@@ -23,6 +24,42 @@ const nextTsTailwindFramer = [
 ];
 
 export const projectsData: ProjectData[] = [
+  {
+    name: "CountPadi",
+    link: "https://www.countpadi.com",
+    description:
+      "Cloud inventory management for opening/closing stock, sales usage, and multi-branch ops.",
+    detailedDescription:
+      "CountPadi is a full-stack inventory management system for businesses—your friendly inventory partner. Built with Next.js, TypeScript, Tailwind CSS, and Supabase. Features opening and closing stock tracking, sales/usage logging, restocking, low-stock alerts, role-based admin and staff access, multi-branch management, Paystack subscriptions, reporting/exports, and real-time operational dashboards.",
+    logos: [
+      ...nextTsTailwindFramer,
+      <SiPostgresql className="text-lg" key="postgres" title="PostgreSQL / Supabase" />,
+    ],
+    imageSrc: "/projects/countpadi.png",
+  },
+  {
+    name: "Nrioma",
+    link: "https://nriomaexport.com",
+    description:
+      "Food-tech e-commerce platform connecting customers to fresh agricultural produce.",
+    detailedDescription:
+      "NRI OMA is a full-featured food-tech e-commerce platform for sourcing, purchasing, and delivering agricultural produce. Built with Next.js, TypeScript, Tailwind CSS, Supabase, Zustand, and Framer Motion. Includes customer shopping and checkout, vendor dashboards, admin product and order management, Cloudinary media, Paystack payments, delivery tracking, and multi-currency support.",
+    logos: [
+      ...nextTsTailwindFramer,
+      <SiPostgresql className="text-lg" key="postgres" title="PostgreSQL / Supabase" />,
+    ],
+    imageSrc: "/projects/nrioma.png",
+  },
+  {
+    name: "Bubuli Foods",
+    link: "https://bubulifoods.com",
+    description:
+      "Premium snack brand website for Nigerian artisan treats with playful product discovery.",
+    detailedDescription:
+      "A modern food brand website for Bubuli Foods—Nigerian artisan snacks and crunchy treats. Built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and Zustand. Features a launch countdown experience, product carousels, notify-me waitlist flows with Google Sheets integration, Google Analytics, cookie consent, WhatsApp support, and a fully responsive, animation-rich shopping storefront.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/bubuli-foods.png",
+  },
   {
     name: "Growth Group Systems",
     link: "https://www.growthgroupsystems.online/home",

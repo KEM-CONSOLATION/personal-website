@@ -12,6 +12,12 @@ This website contains information about my work as a senior frontend engineer, i
 
 ## Projects
 
+- [CountPadi](https://www.countpadi.com): Cloud inventory management for opening/closing stock, sales usage, multi-branch ops, and reporting.
+
+- [Nrioma](https://nriomaexport.com): Food-tech e-commerce platform connecting customers to fresh agricultural produce with vendor and admin dashboards.
+
+- [Bubuli Foods](https://bubulifoods.com): Premium snack brand website for Nigerian artisan treats with product discovery, waitlist, and launch countdown.
+
 - [NPF Connect](https://play.google.com/store/apps/details?id=gov.npfconnect.app): Communication and operations platform for Nigerian Police Force officers with web dashboard and mobile app.
 
 - [Nexkro LMS](https://nexkro.com): Learning management system frontend for courses, academy onboarding, and talent development.
