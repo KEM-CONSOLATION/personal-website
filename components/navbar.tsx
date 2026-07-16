@@ -32,9 +32,9 @@ export const Navbar = ({ animationDelay = 0.5 }: NavbarProps) => {
       <motion.div
         {...fadeInAnimation}
         transition={{ delay: animationDelay, duration: 0.5 }}
-        className="mx-auto flex flex-row justify-between p-4 uppercase sm:container sm:p-6"
+        className="mx-auto flex w-full max-w-full flex-row items-center justify-between gap-3 p-4 uppercase sm:container sm:gap-6 sm:p-6"
       >
-        <Link href="/" title="Home">
+        <Link href="/" title="Home" className="shrink-0">
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 320, damping: 22 }}
@@ -51,7 +51,7 @@ export const Navbar = ({ animationDelay = 0.5 }: NavbarProps) => {
           </motion.div>
         </Link>
 
-        <div className="flex flex-row items-center justify-between gap-8 text-sm font-medium tracking-wider sm:gap-16">
+        <div className="flex min-w-0 flex-row items-center justify-end gap-4 text-sm font-medium tracking-wider sm:gap-10 md:gap-16">
           <NavLink href="/projects" isActive={pathname === "/projects"}>
             Projects
           </NavLink>

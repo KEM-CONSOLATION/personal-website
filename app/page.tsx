@@ -13,22 +13,23 @@ export default function Home() {
   return (
     <>
       <Breadcrumbs items={[{ name: "Home", item: "/" }]} />
-      <main className="relative text-neutral-900 uppercase dark:text-white">
-        <div className="container mx-auto flex min-h-screen w-full items-center justify-center">
-          <motion.div className="page-content" {...fadeInAnimation}>
-            <div className="z-20 grid gap-2">
+      <main className="relative overflow-x-hidden text-neutral-900 uppercase dark:text-white">
+        <div className="container mx-auto flex min-h-screen w-full items-center justify-center px-4 sm:px-6">
+          <motion.div className="page-content w-full max-w-full" {...fadeInAnimation}>
+            <div className="z-20 mx-auto grid w-full max-w-full gap-2">
               <p className="z-10 text-xs font-medium tracking-widest text-neutral-600 sm:text-sm dark:text-gray-400">
                 Hey, I&apos;m
               </p>
 
-              <motion.h1 className="relative z-10 text-7xl font-black tracking-wide sm:text-9xl">
-                <span className="relative inline-block">
+              <motion.h1 className="relative z-10 w-full max-w-full text-[clamp(1.75rem,8.4vw,8rem)] leading-none font-black tracking-tight sm:tracking-wide">
+                <span className="relative inline-block max-w-full">
                   <span className="relative z-10 text-neutral-900 dark:text-white">
                     CONSOLATION
                   </span>
                   {!prefersReducedMotion && (
                     <>
                       <motion.span
+                        aria-hidden="true"
                         className="absolute top-0 left-0 z-0 text-blue-400"
                         initial={{ x: 0, y: 0 }}
                         animate={{ x: [-1, 1, -1], y: [1, -1, 1] }}
@@ -41,6 +42,7 @@ export default function Home() {
                         CONSOLATION
                       </motion.span>
                       <motion.span
+                        aria-hidden="true"
                         className="absolute top-0 left-0 z-0 text-red-400"
                         initial={{ x: 0, y: 0 }}
                         animate={{ x: [1, -1, 1], y: [-1, 1, -1] }}
@@ -57,11 +59,11 @@ export default function Home() {
                 </span>
               </motion.h1>
 
-              <p className="z-10 text-right text-sm font-semibold tracking-wider text-neutral-600 sm:text-lg dark:text-gray-400">
+              <p className="z-10 text-right text-xs font-semibold tracking-wider text-neutral-600 sm:text-lg dark:text-gray-400">
                 a senior frontend engineer
               </p>
 
-              <div className="mx-auto mt-10 flex w-full max-w-4xl items-center justify-between">
+              <div className="mx-auto mt-8 flex w-full max-w-4xl items-center justify-between gap-4 px-1 sm:mt-10">
                 <Link href="/projects">
                   <motion.div
                     className="group relative flex w-fit items-center gap-2"
