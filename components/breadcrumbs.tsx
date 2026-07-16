@@ -10,7 +10,7 @@ interface BreadcrumbsProps {
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
-  const baseUrl = "https://www.jeremy0x.dev";
+  const baseUrl = "https://techieconso.vercel.app";
 
   const breadcrumbList = {
     "@context": "https://schema.org",

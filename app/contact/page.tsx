@@ -43,10 +43,10 @@ export default function Page() {
                     <h2 className="text-lg font-bold tracking-widest">Email</h2>
                     <p className="leading-loose tracking-wider text-neutral-600 dark:text-gray-400">
                       <a
-                        href="mailto:aworetanjeremiah@gmail.com"
+                        href="mailto:consolationlotachi@gmail.com"
                         className="underline-offset-2 hover:underline"
                       >
-                        aworetanjeremiah@gmail.com
+                        consolationlotachi@gmail.com
                       </a>
                     </p>
                   </div>

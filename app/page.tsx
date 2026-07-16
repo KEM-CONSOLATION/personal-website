@@ -24,7 +24,7 @@ export default function Home() {
               <motion.h1 className="relative z-10 text-7xl font-black tracking-wide sm:text-9xl">
                 <span className="relative inline-block">
                   <span className="relative z-10 text-neutral-900 dark:text-white">
-                    JEREMY
+                    CONSOLATION
                   </span>
                   {!prefersReducedMotion && (
                     <>
@@ -38,7 +38,7 @@ export default function Home() {
                           ease: "linear",
                         }}
                       >
-                        JEREMY
+                        CONSOLATION
                       </motion.span>
                       <motion.span
                         className="absolute top-0 left-0 z-0 text-red-400"
@@ -50,7 +50,7 @@ export default function Home() {
                           ease: "linear",
                         }}
                       >
-                        JEREMY
+                        CONSOLATION
                       </motion.span>
                     </>
                   )}
@@ -58,7 +58,7 @@ export default function Home() {
               </motion.h1>
 
               <p className="z-10 text-right text-sm font-semibold tracking-wider text-neutral-600 sm:text-lg dark:text-gray-400">
-                a frontend engineer
+                a senior frontend engineer
               </p>
 
               <div className="mx-auto mt-10 flex w-full max-w-4xl items-center justify-between">
@@ -86,7 +86,7 @@ export default function Home() {
                 </Link>
 
                 <a
-                  href="/Resume_JeremiahAworetan.pdf"
+                  href="https://drive.google.com/file/d/136GAlJZjlG9M-65oZ0lYXZns34H6S-1b/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -4,24 +4,24 @@ import type { ReactNode } from "react";
 import { Breadcrumbs } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Projects by Jeremiah Aworetan | Product Engineering Portfolio",
+  title: "Projects by Consolation Lotachi Kem | Senior Frontend Engineer",
   description:
-    "Explore Jeremiah Aworetan’s end-to-end product builds spanning crypto, fintech, and consumer web experiences.",
+    "Explore production web applications built by Consolation Lotachi Kem — church management platforms, enterprise websites, marketplaces, and SaaS products.",
   openGraph: {
-    title: "Featured Projects | Jeremiah Aworetan",
+    title: "Featured Projects | Consolation Lotachi Kem",
     description:
-      "Dive into a curated selection of shipping-grade projects built with Next.js, TypeScript, and modern tooling.",
-    url: "https://www.jeremy0x.dev/projects",
+      "A curated selection of shipping-grade projects built with Next.js, TypeScript, and modern frontend tooling.",
+    url: "https://techieconso.vercel.app/projects",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.jeremy0x.dev/projects",
+    canonical: "https://techieconso.vercel.app/projects",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Featured Projects | Jeremiah Aworetan",
+    title: "Featured Projects | Consolation Lotachi Kem",
     description:
-      "Browse real-world fintech, commerce, and productivity products crafted by Jeremiah Aworetan.",
+      "Browse real-world enterprise, marketplace, and SaaS products crafted by Consolation Lotachi Kem.",
   },
 };
 
@@ -30,28 +30,28 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://www.jeremy0x.dev/projects/#webpage",
-      url: "https://www.jeremy0x.dev/projects",
-      name: "Projects by Jeremiah Aworetan | Product Engineering Portfolio",
+      "@id": "https://techieconso.vercel.app/projects/#webpage",
+      url: "https://techieconso.vercel.app/projects",
+      name: "Projects by Consolation Lotachi Kem | Senior Frontend Engineer",
       description:
-        "Explore Jeremiah Aworetan's end-to-end product builds spanning crypto, fintech, and consumer web experiences.",
-      isPartOf: { "@id": "https://www.jeremy0x.dev/#website" },
+        "Explore production web applications built by Consolation Lotachi Kem — church management platforms, enterprise websites, marketplaces, and SaaS products.",
+      isPartOf: { "@id": "https://techieconso.vercel.app/#website" },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.jeremy0x.dev/projects/#breadcrumb",
+      "@id": "https://techieconso.vercel.app/projects/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.jeremy0x.dev",
+          item: "https://techieconso.vercel.app",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Projects",
-          item: "https://www.jeremy0x.dev/projects",
+          item: "https://techieconso.vercel.app/projects",
         },
       ],
     },

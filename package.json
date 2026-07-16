@@ -1,11 +1,10 @@
 {
-  "name": "@jeremy0x/personal-website",
+  "name": "techieconso-personal-website",
   "version": "1.1.0",
-  "description": "jeremy0x's personal website.",
+  "description": "Consolation Lotachi Kem's personal website.",
   "author": {
-    "name": "Jeremy",
-    "email": "aworetanjeremiah@gmail.com",
-    "url": "https://www.jeremy0x.dev"
+    "name": "Consolation Lotachi Kem",
+    "url": "https://techieconso.vercel.app"
   },
   "license": "BSD-3-Clause",
   "repository": {
@@ -14,7 +13,7 @@
   },
   "private": true,
   "scripts": {
-    "dev": "portless jeremy0x next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0"

@@ -15,7 +15,7 @@ export const Socials = () => {
           <span className={DECORATIVE_LINE_CLASS} />
 
           <Link
-            href="https://github.com/jeremy0x"
+            href="https://github.com/KEM-CONSOLATION"
             target="blank"
             title="GitHub"
           >
@@ -23,14 +23,14 @@ export const Socials = () => {
           </Link>
 
           <Link
-            href="https://linkedin.com/in/jeremy0x"
+            href="https://ng.linkedin.com/in/kem-consolation"
             target="blank"
             title="LinkedIn"
           >
             <AiFillLinkedin className="transition-all duration-300 hover:scale-125 hover:text-neutral-900 dark:hover:text-white" />
           </Link>
 
-          <Link href="https://x.com/thejeremy0x" target="blank" title="Twitter">
+          <Link href="https://x.com/Techie_Conso" target="blank" title="Twitter">
             <FaXTwitter className="transition-all duration-300 hover:scale-125 hover:text-neutral-900 dark:hover:text-white" />
           </Link>
         </div>

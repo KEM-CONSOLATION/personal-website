@@ -2,36 +2,36 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Contact Jeremiah Aworetan | Let’s Collaborate",
+  title: "Contact Consolation Lotachi Kem | Let's Collaborate",
   description:
-    "Get in touch with Jeremiah Aworetan for frontend engineering opportunities, collaborations, or speaking engagements.",
+    "Get in touch with Consolation Lotachi Kem for senior frontend engineering opportunities, collaborations, or consulting.",
   openGraph: {
-    title: "Contact Jeremiah Aworetan",
+    title: "Contact Consolation Lotachi Kem",
     description:
-      "Reach out to Jeremiah for frontend engineering work, collaborations, or mentorship.",
-    url: "https://www.jeremy0x.dev/contact",
+      "Reach out to Consolation for frontend engineering work, collaborations, or mentorship.",
+    url: "https://techieconso.vercel.app/contact",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.jeremy0x.dev/contact",
+    canonical: "https://techieconso.vercel.app/contact",
   },
   twitter: {
     card: "summary",
-    title: "Contact Jeremiah Aworetan",
+    title: "Contact Consolation Lotachi Kem",
     description:
-      "Send a message to Jeremiah Aworetan for engineering projects or partnerships.",
+      "Send a message to Consolation Lotachi Kem for engineering projects or partnerships.",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "@id": "https://www.jeremy0x.dev/contact/#webpage",
-  url: "https://www.jeremy0x.dev/contact",
-  name: "Contact Jeremiah Aworetan",
+  "@id": "https://techieconso.vercel.app/contact/#webpage",
+  url: "https://techieconso.vercel.app/contact",
+  name: "Contact Consolation Lotachi Kem",
   description:
-    "Get in touch with Jeremiah Aworetan for frontend engineering opportunities, collaborations, or speaking engagements.",
-  isPartOf: { "@id": "https://www.jeremy0x.dev/#website" },
+    "Get in touch with Consolation Lotachi Kem for senior frontend engineering opportunities, collaborations, or consulting.",
+  isPartOf: { "@id": "https://techieconso.vercel.app/#website" },
 };
 
 export default function ContactLayout({ children }: { children: ReactNode }) {

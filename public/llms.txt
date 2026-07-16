@@ -1,67 +1,37 @@
-# Jeremiah Aworetan - Personal Website
+# Consolation Lotachi Kem - Personal Website
 
-> Frontend engineer building scalable web solutions for seamless user experiences. This website showcases my portfolio of projects, including web applications, landing pages, and development tools.
+> Senior Frontend Engineer with 5+ years of experience building scalable, high-performance web applications using React.js, Next.js, TypeScript, and modern frontend technologies.
 
-This website contains information about my work as a frontend engineer, including project showcases, contact information, and professional details. The site is built with Next.js, TypeScript, and modern web technologies.
+This website contains information about my work as a senior frontend engineer, including project showcases, contact information, and professional details. The site is built with Next.js, TypeScript, and modern web technologies.
 
 ## Main Pages
 
-- [Home](https://www.jeremy0x.dev/): Personal introduction and overview
-- [Projects](https://www.jeremy0x.dev/projects): Portfolio showcasing web development projects including crypto payment solutions, e-commerce platforms, and custom websites
-- [Contact](https://www.jeremy0x.dev/contact): Contact form and information
+- [Home](https://techieconso.vercel.app/): Personal introduction and overview
+- [Projects](https://techieconso.vercel.app/projects): Portfolio showcasing web development projects including church management platforms, enterprise websites, marketplaces, and SaaS products
+- [Contact](https://techieconso.vercel.app/contact): Contact form and information
 
 ## Projects
 
-- [Surgechain](https://app.surgechain.io): DEX trading terminal that unifies news, pump-fun style memecoins, trending tokens, and perpetuals into a single interface with live on-chain execution, built with Next.js, TypeScript, Tailwind CSS, and Supabase/PostgreSQL.
+- [HOME-CELL](https://www.crshomecell.online): Church management platform for Salvation Ministries Home Fellowship with role-based dashboards, real-time KPIs, attendance tracking, and PWA support.
 
-- [Noblocks](https://noblocks.xyz): Open-source next-gen crypto payment solution with zero gas fees that removes P2P transaction complexity using a Next.js, TypeScript, and Framer Motion frontend.
+- [CHAAD Energy](https://www.chaadenergy.com): Corporate website for an engineering and energy services firm with dynamic services, projects, careers, and news powered by REST APIs and Cloudinary.
 
-- [Kazlat LIMS](https://lims.kazlatpublicanalysts.com): Lab information management system for Kazlat Public Analysts that tracks samples from submission through analysis while generating invoices and client certificates using Next.js, Tailwind CSS, TypeScript, Supabase/PostgreSQL, and Framer Motion.
+- [CHAAD Engineering](https://www.chaadengineering.com): Enterprise website for ISO 9001–certified oil and gas engineering specialists with cinematic hero carousels, services catalogs, and SEO-optimized pages.
 
-- [Paycrest Dashboard](https://app.paycrest.io): Operations console for Paycrest's crypto-to-fiat rails that monitors settlements, liquidity, compliance states, and merchant analytics in real time.
+- [BoroFuel](https://borofuel.org): Landing page for a fuel access and station-partner app connecting approved drivers with designated filling stations.
 
-- [Noblocks Blog](https://noblocks.xyz/blog): Sanity-powered blog for Noblocks with dynamic content rendering and SEO-focused Next.js integration.
+- [Work & Shop](https://workandshopapp.com): Marketplace platform connecting skilled professionals, vendors, and customers with authentication, bookings, payments, and real-time messaging.
 
-- [AI Titans](https://t.me/AI_Titans_bot): Battle-focused tap-to-earn RPG Telegram Mini App built with React, Vite, Tailwind CSS, and the Telegram SDK for in-chat gameplay and rewards syncing.
+- [Troo](https://troohq.com): Restaurant management software for hospitality businesses managing front-of-house, kitchen operations, and payment processing.
 
-- [Salvage Yard Store](https://www.salvageyardstore.com): Dual-sided e-commerce platform for electronic devices with inventory tracking, separate buyer/seller interfaces, and order management built on Next.js and TypeScript.
+- [Ecomarine](https://site.ecomarinegroup.com): Maritime services website for container services, terminal operations, and shipping solutions.
 
-- [Shape Up Fitness](https://shapeupfitnessonline.com): Fitness platform showcasing gym services, facilities, schedules, and trainers using React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
+- [MagicGames](https://playmagic.ng/): Gaming platform with user authentication, campaign systems, OTP verification, and subscription management.
 
-- [Qari](https://qariworld.com): Premium ride-hailing waitlist site promoting clean vehicles, transparent fixed pricing, and WhatsApp-first driver support in Lagos.
+## Contact
 
-- [Step-Up Academy](https://academy.stepupsummit.org): Multi-page academy experience that enrolls students into cohorts with Paystack payments and Resend-powered email automations using a Turborepo with Vite, Next.js API routes, TypeScript, Tailwind CSS, Framer Motion, and PostgreSQL.
-
-- [Mindlar](https://mindlar.com): Landing page for the Mindlar learning community that explains offerings and community values with a Vite, React, Tailwind CSS, and Framer Motion stack.
-
-- [Zap by Paycrest](https://zap-beta.jeremy0x.dev/): Hackathon-winning early crypto payment solution for Paycrest from the Based Africa hackathon, now deprecated in favor of Noblocks.
-
-- [Sentinel Finance](https://sentfi.jeremy0x.dev): Proof-of-concept decentralized commerce platform combining e-commerce with blockchain payments using vanilla JavaScript and GSAP.
-
-- [BahamaFoodie](http://hellobahamafoodie.com): Digital plant-based restaurant platform in The Bahamas with menu browsing, online ordering, and delivery tracking implemented in vanilla JavaScript and GSAP.
-
-- [Lync](https://thelync.app): Product landing page for Lync with a modern, conversion-focused Next.js and Tailwind CSS design.
-
-- [Valtrix](https://valtrix.jeremy0x.dev/): Website for a creative software agency featuring a clean brand presence and smooth animations built in vanilla JavaScript.
-
-- [Sesshin](https://sesshin.jeremy0x.dev): Custom brand website with immersive GSAP animations and modern visual design.
-
-- [$Dogatoshi](https://dogatoshi.jeremy0x.dev/): Meme coin community website that explains the $Dogatoshi project with an energetic Tailwind CSS UI.
-
-- [Elder Wallet](https://elderwallet.jeremy0x.dev): Proof-of-concept Bitcoin wallet demo that surfaces Runes Network assets through a simple browser UI.
-
-- [MentorMeInTech Waitlist](https://mentormeintech.jeremy0x.dev): Waitlist page connecting aspiring developers with mentors, focused on capturing signups and social proof.
-
-- [foodieFetch](https://foodie-fetch.jeremy0x.dev): Recipe finder app that suggests meals from available ingredients with simple ingredient search and filtering.
-
-- [LingoLookup](https://lingolookup.jeremy0x.dev): Comprehensive dictionary app that provides definitions, synonyms, antonyms, pronunciation, and examples with search history and favorites.
-
-- [Mullti](https://mullti.jeremy0x.dev): Dual-sided e-commerce experience with product catalog, shopping cart, authentication, and order management built on Next.js and Tailwind CSS.
-
-- [Sways](https://sways.jeremy0x.dev): Custom Dutch brand website that pairs minimalist visuals with smooth Next.js and Tailwind CSS animations.
-
-## Optional
-
-- [GitHub Profile](https://github.com/jeremy0x): Source code repositories and contributions
-- [LinkedIn](https://linkedin.com/in/jeremy0x): Professional network profile
-- [Twitter/X](https://x.com/thejeremy0x): Social media presence
+- GitHub: https://github.com/KEM-CONSOLATION
+- LinkedIn: https://ng.linkedin.com/in/kem-consolation
+- Twitter: https://x.com/Techie_Conso
+- YouTube: https://www.youtube.com/@TechieConso
+- WhatsApp: +234 703 189 6845

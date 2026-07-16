@@ -1,283 +1,203 @@
 import { ProjectData } from "@/types";
 import {
-  BiLogoCss3,
-  BiLogoHtml5,
-  BiLogoJavascript,
   BiLogoReact,
   BiLogoTailwindCss,
-  BiLogoTelegram,
   BiLogoTypescript,
 } from "react-icons/bi";
 import {
   SiFramer,
-  SiGreensock,
   SiNextdotjs,
-  SiRemix,
-  SiVite,
-  SiPostgresql,
-  SiFigma,
-  SiFlutter,
-  SiDart,
-  SiGoogleplay,
+  SiSanity,
 } from "react-icons/si";
-import { FaAppStore } from "react-icons/fa";
+
+const nextTsTailwind = [
+  <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
+  <BiLogoTypescript key="typescript" title="TypeScript" />,
+  <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
+];
+
+const nextTsTailwindFramer = [
+  ...nextTsTailwind,
+  <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
+];
 
 export const projectsData: ProjectData[] = [
   {
-    name: "Reelpay Mobile App",
-    link: "https://reelpay-web-link.onelink.me/FMTg/925gmol4",
+    name: "HOME-CELL (Salvation Ministries)",
+    link: "https://www.crshomecell.online",
     description:
-      "Mobile application connecting UGC creators and influencers with brand collaborations.",
+      "Church management platform for Salvation Ministries Home Fellowship operations.",
     detailedDescription:
-      "A dedicated mobile platform built for content creators. It enables creators to find brand campaigns, manage job workflows, build professional video portfolios, and receive secure payments.",
-    logos: [
-      <SiFlutter className="text-lg" key="flutter" title="Flutter" />,
-      <SiDart className="text-lg" key="dart" title="Dart" />,
-      <SiGoogleplay className="text-lg" key="googleplay" title="Google Play Store" />,
-      <FaAppStore className="text-lg" key="appstore" title="Apple App Store" />,
-    ],
-    imageSrc: "/projects/reelpay-play-store.jpg",
+      "A production church management platform digitalizing Salvation Ministries Home Fellowship operations across states, areas, zones, and fellowship cells. Built role-based dashboards for State, Area, Zonal, and Cell leaders with real-time KPIs—member counts, new converts, attendance rate, and retention—plus attendance submission, convert pipeline tracking, compliance monitoring, reports, and in-app communications. Features global search, multi-level hierarchy management, scripture widgets, and PWA support for leaders in the field.",
+    logos: nextTsTailwind,
+    imageSrc: "/projects/smhos-homecell.png",
   },
-
   {
-    name: "Noblocks",
-    link: "https://noblocks.xyz",
-    githubLink: "https://github.com/paycrest/noblocks",
+    name: "CHAAD Energy",
+    link: "https://www.chaadenergy.com",
     description:
-      "Open-source, next-gen crypto payment solution with zero gas fees.",
+      "Corporate website for an engineering and energy services firm.",
     detailedDescription:
-      "Open-source advanced crypto payment platform eliminating P2P transaction complexity. Built with Next.js, TypeScript, and Framer Motion. Features instant settlements, real-time tracking, and comprehensive merchant tools.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/noblocks.jpg",
+      "Corporate website for CHAAD Energy Limited—an engineering and energy services firm delivering EPC, commissioning, cathodic protection, tank services, and turnkey solutions across oil, gas, and industrial sectors. Built a content-driven marketing platform with dynamic services, projects, careers, and news powered by REST APIs, Cloudinary asset delivery, animated hero sections, client trust showcases, and conversion-focused contact flows.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/chaad-energy.png",
   },
-
   {
-    name: "BriefIntel",
-    link: "https://reelpay.co/briefintel",
+    name: "CHAAD Engineering",
+    link: "https://www.chaadengineering.com",
     description:
-      "AI-powered tool for brands to optimize UGC briefs and analyze campaign performance.",
+      "Enterprise website for ISO 9001–certified oil and gas engineering specialists.",
     detailedDescription:
-      "An intelligent platform within Reelpay that enables brands to analyze UGC campaign performance and generate optimized content briefs. Streamlines the brief creation process by generating requirements directly from product links.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-      <SiFigma className="text-lg" key="figma" title="Figma" />,
-    ],
-    imageSrc: "/projects/briefintel.jpg",
+      "Enterprise website for CHAAD Engineering & Technical Services Ltd—ISO 9001–certified oil and gas engineering specialists. Delivered a high-performance Next.js experience with cinematic hero carousels, services and project catalogs, careers and news modules, quotation request forms, partner marquee, FAQ, cookie compliance, and SEO-optimized pages showcasing 150+ global infrastructure projects.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/chaad-engineering.png",
   },
-
   {
-    name: "Lync",
-    link: "https://thelync.app",
-    description: "Landing page for Lync product.",
-    detailedDescription:
-      "Landing page showcasing the Lync product. Features modern design and clear product communication.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/lync-landinge-page.jpg",
-  },
-
-  {
-    name: "Football for Peace",
-    link: "https://football-for-peace.vercel.app",
+    name: "BoroFuel",
+    link: "https://borofuel.org",
     description:
-      "Interactive showcase of the Football for Peace initiative, celebrating its South American heritage and global mission.",
+      "Landing page for a fuel access and station-partner app for approved drivers.",
     detailedDescription:
-      "An immersive, animated timeline experience detailing the history and impact of the Football for Peace (Fútbol Por La Paz) initiative, highlighting its United Nations partnerships (UNOSDP) and support from global icons like Pelé and Maradona.",
+      "A professional landing page website for Borofuel - a fuel access and station-partner app that connects approved drivers with designated filling stations. Features include driver portal, organization ID verification, contact forms, and responsive design with smooth animations.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/borofuel.png",
+  },
+  {
+    name: "ASAP DBA",
+    link: "https://asapdbaservices.com",
+    description:
+      "Modern Next.js platform with Redux Toolkit, Zustand, and Framer Motion.",
+    detailedDescription:
+      "A modern Next.js project with comprehensive state management solutions. Features include Redux Toolkit, Zustand with persistence, Framer Motion animations, Embla Carousel, and Sonner toast notifications. Built with TypeScript and Tailwind CSS for a robust development experience.",
     logos: [
-      <SiVite className="text-xl" key="vite" title="Vite" />,
+      ...nextTsTailwindFramer,
       <BiLogoReact key="react" title="React" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <SiGreensock key="greensock" title="GSAP" />,
     ],
-    imageSrc: "/projects/ffp.jpg",
+    imageSrc: "/projects/asapdba.png",
   },
-
   {
-    name: "Kazlat LIMS",
-    link: "https://lims.kazlatpublicanalysts.com",
+    name: "Blunt Tribe",
+    link: "https://blunttribe.com",
     description:
-      "Lab information management system for Kazlat to track samples, invoices, and certificates.",
+      "Web application with email integration, responsive design, and smooth animations.",
     detailedDescription:
-      "Production LIMS for Kazlat Public Analysts that tracks sample submissions through analysis, automates invoice generation, and produces signed certificates for clients. Built with Next.js, TypeScript, Tailwind CSS, Supabase/PostgreSQL, and Framer Motion.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiPostgresql className="text-lg" key="postgres" title="PostgreSQL" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/kazlat-lims.jpg",
+      "A modern web application built with Next.js featuring email functionality, responsive design, and smooth animations. The platform includes contact forms with email integration using Resend and Nodemailer, toast notifications, and a clean, professional UI.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/blunttribe.png",
   },
-
   {
-    name: "Paycrest",
-    link: "https://paycrest.io",
+    name: "Nexkro",
+    link: "https://nexkro.com",
     description:
-      "Core business infrastructure for Paycrest, spanning their marketing website and merchant operations dashboard.",
+      "Next.js application with carousel components, animations, and email services.",
     detailedDescription:
-      "Crafted Paycrest's end-to-end customer-facing rails, including the high-converting marketing website and the core Remix-based operations dashboard tracking merchant transactions, settlements, and liquidity flows.",
-    logos: [
-      <SiNextdotjs key="next.js" className="text-lg" title="Next.js" />,
-      <SiRemix key="remix" className="text-sm" title="Remix JS" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/paycrest.jpg",
+      "A modern Next.js application featuring carousel components, animations, and email functionality. Built with the latest Next.js 16, React 19, and TypeScript. Includes Framer Motion for smooth animations, Embla Carousel for interactive components, and Resend for email services.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/nexkro.png",
   },
-
   {
-    name: "Surgechain",
-    link: "https://app.surgechain.io",
+    name: "Aerysyn",
+    link: "https://aerysyn.com/",
     description:
-      "DEX terminal for tracking trending tokens, news, pump-fun launches, and perpetuals with live trading.",
+      "Cybersecurity platform with dark mode, Radix UI, and modern animations.",
     detailedDescription:
-      "Full-featured DEX trading terminal that brings news, pump-fun style memecoins, trending tokens, and perpetuals into a single interface, with real order execution wired into on-chain liquidity. Built with Next.js, TypeScript, Tailwind CSS, and Supabase/PostgreSQL.",
-    logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiPostgresql className="text-lg" key="postgres" title="PostgreSQL" />,
-    ],
-    imageSrc: "/projects/surgechain.jpg",
+      "A cybersecurity-focused platform built with Next.js featuring dark mode support, responsive design, and modern UI components. Includes Radix UI components, Framer Motion animations, email functionality with Nodemailer, and a professional theme system with next-themes.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/aerysyn.png",
   },
-
   {
-    name: "Noblocks Blog",
-    link: "https://noblocks.xyz/blog",
-    githubLink: "https://github.com/paycrest/noblocks/tree/main/app/blog",
-    description: "Blog platform powered by Sanity.io for Noblocks.",
+    name: "MagicGames",
+    link: "http://playmagic.ng/",
+    description:
+      "Gaming platform with authentication, campaigns, and dashboard functionality.",
     detailedDescription:
-      "Content management system for Noblocks blog using Sanity.io headless CMS. Features dynamic content rendering, SEO optimization, and seamless integration with the main platform.",
+      "A gaming platform built with Next.js featuring user authentication, game management, campaign systems, and dashboard functionality. The platform includes phone verification, OTP authentication, subscription management, and a comprehensive gaming experience with real-time updates and user engagement features.",
     logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-    ],
-    imageSrc: "/projects/noblocks-blog.jpg",
-  },
-
-  {
-    name: "AI Titans",
-    link: "https://t.me/AI_Titans_bot",
-    description: "Battle-focused tap-to-earn RPG built as a Telegram Mini App.",
-    detailedDescription:
-      "Telegram Mini App that lets players command mech titans, battle through tap-to-earn encounters, and sync rewards directly inside chat. Includes Tailwind-driven UI, Telegram SDK auth, and real-time battle state updates.",
-    logos: [
-      <SiVite className="text-xl" key="vite" title="Vite" />,
+      ...nextTsTailwind,
       <BiLogoReact key="react" title="React" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
-      <BiLogoTelegram key="telegram" title="Telegram Mini Apps SDK" />,
     ],
-    imageSrc: "/projects/ai-titans.jpg",
+    imageSrc: "/projects/playmagic.png",
   },
-
   {
-    name: "$Dogatoshi",
-    link: "https://dogatoshi.jeremy0x.dev/",
-    githubLink: "https://github.com/jeremy0x/dogatoshi",
-    description: "Informative website for $Dogatoshi meme coin community.",
-    detailedDescription:
-      "Community website providing project information and details. Built with JavaScript and Tailwind CSS with an engaging, energetic UI.",
-    logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-    ],
-    imageSrc: "/projects/dogatoshi.jpg",
-  },
-
-  {
-    name: "BahamaFoodie",
-    link: "http://hellobahamafoodie.com",
-    description: "Digital plant-based restaurant platform in the Bahamas.",
-    detailedDescription:
-      "Platform for a plant-based restaurant in The Bahamas. Featured menu browsing, online ordering, and delivery tracking. Built with vanilla JavaScript and GSAP animations.",
-    logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoCss3 key="css" title="CSS" />,
-      <SiGreensock key="greensock" title="GSAP" />,
-    ],
-    imageSrc: "/projects/hellobahamafoodie.jpg",
-  },
-
-  {
-    name: "RoomLink",
-    link: "https://roomlinkng.com/",
+    name: "Premium & Classy",
+    link: "https://premiumandclassy.netlify.app",
     description:
-      "Nigeria's agent-free property rental platform connecting verified landlords and renters.",
+      "Event planning website with Sanity CMS, portfolio showcase, and booking.",
     detailedDescription:
-      "An agent-free rental platform in Nigeria that directly connects verified landlords and renters, facilitating verified listings, secure in-app monthly payments, and direct messaging to eliminate middleman fees.",
+      "A professional event planning website built with Next.js and Sanity CMS. Features include portfolio showcase, service management, client testimonials, booking system, and contact forms. The website serves as a digital business card for event planners with integrated email services and responsive design.",
     logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
+      ...nextTsTailwindFramer,
+      <SiSanity className="text-lg" key="sanity" title="Sanity CMS" />,
     ],
-    imageSrc: "/projects/roomlink.jpg",
+    imageSrc: "/projects/premium-classy-events.png",
   },
-
   {
-    name: "Shape Up Fitness",
-    link: "https://shapeupfitnessonline.com",
-    githubLink: "https://github.com/jeremy0x/project-suf",
+    name: "Work & Shop",
+    link: "https://workandshopapp.com",
     description:
-      "Fitness platform with integrated shopping management and admin dashboard features.",
+      "Marketplace platform connecting professionals, vendors, and customers.",
     detailedDescription:
-      "Information and business platform for Shape Up Fitness gym. Features facility showcases, schedules, trainer profiles, shopping management capabilities, and admin features.",
+      "A comprehensive marketplace platform connecting skilled professionals, vendors, and customers. Built with Next.js, featuring authentication, service listings, booking system, payment processing, and real-time messaging. The platform enables seamless transactions between service providers and customers.",
+    logos: nextTsTailwind,
+    imageSrc: "/projects/workandshop.png",
+  },
+  {
+    name: "Umpire Wave",
+    link: "https://umpirewave.com",
+    description:
+      "Creative agency website for music production, events, and studio services.",
+    detailedDescription:
+      "A creative agency website for Umpire Wave showcasing music production, event coverage, photography, and studio services. Built with Next.js featuring portfolio galleries, brand partnerships, team showcases, and contact forms. The website serves as a digital presence for the agency's creative services.",
+    logos: nextTsTailwind,
+    imageSrc: "/projects/umpirewave.png",
+  },
+  {
+    name: "Troo",
+    link: "https://troohq.com",
+    description:
+      "Restaurant management software for hospitality businesses.",
+    detailedDescription:
+      "Troo is a comprehensive Restaurant Management Software tailored to elevate the operations of hospitality businesses. With a suite of integrated tools, Troo helps businesses enhance efficiency, improve customer experience, and ultimately boost profitability. Designed with ease of use in mind, the software is built to seamlessly manage front-of-house and kitchen operations while simplifying payment processing and customer interactions.",
     logos: [
-      <SiVite key="vite" title="Vite" />,
+      ...nextTsTailwind,
       <BiLogoReact key="react" title="React" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
     ],
-    imageSrc: "/projects/shape-up-fitness.jpg",
+    imageSrc: "/projects/troohq.png",
   },
-
   {
-    name: "Salvage Yard Store",
-    link: "https://salvageyard.jeremy0x.dev/",
-    description: "Dual-sided e-commerce platform for electronic devices.",
+    name: "Growth Group DC Website",
+    link: "https://dc-calabar.netlify.app",
+    description:
+      "Church management platform with events, blog, audio messages, and reports.",
     detailedDescription:
-      "E-commerce platform with separate buyer and seller interfaces. Features inventory management, real-time stock updates, customer accounts, and order tracking. Built with Next.js and TypeScript.",
+      "A comprehensive church management platform built with Next.js and Sanity CMS. Features include event management, blog system, audio messages, weekly reports, and department management. The platform serves as a digital hub for church members with real-time content updates, member engagement tools, and administrative dashboards.",
     logos: [
-      <SiNextdotjs className="text-xl" key="next.js" title="Next.js" />,
-      <BiLogoTailwindCss key="tailwind" title="Tailwind CSS" />,
-      <BiLogoTypescript key="typescript" title="TypeScript" />,
-      <SiFramer className="text-lg" key="framer" title="Framer Motion" />,
+      ...nextTsTailwind,
+      <SiSanity className="text-lg" key="sanity" title="Sanity CMS" />,
     ],
-    imageSrc: "/projects/salvage-yard-store.jpg",
+    imageSrc: "/projects/growth-groups.png",
   },
-
   {
-    name: "Sentinel Finance",
-    link: "https://sentfi.jeremy0x.dev",
-    githubLink: "https://github.com/jeremy0x/sentinel-finance",
-    description: "Decentralized commerce platform with payment integration.",
+    name: "Ecomarine",
+    link: "https://site.ecomarinegroup.com",
+    description:
+      "Maritime services website for container services and terminal operations.",
     detailedDescription:
-      "Proof-of-concept dCommerce platform combining e-commerce with blockchain. Features modern UI, secure payments, and transaction monitoring. Built with vanilla JavaScript and GSAP.",
+      "A modern maritime services website for Ecomarine, featuring comprehensive information about container services, terminal operations, and shipping solutions. Built with Next.js and includes features like blog management, career listings, FAQ system, and responsive design optimized for the maritime industry.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/ecomarinegroup.png",
+  },
+  {
+    name: "Kurenode",
+    link: "https://qproxim.netlify.app",
+    description:
+      "Health insurance software for patient records and healthcare operations.",
+    detailedDescription:
+      "Kurenode is a health insurance software application aimed at enhancing healthcare delivery for patients and operational efficiency for healthcare providers. Kurenode focuses on integrating patient records, automating administrative tasks, and optimizing revenue management. The application seeks to improve patient care, streamline healthcare processes, ensure compliance with regulations, and reduce costs.",
     logos: [
-      <BiLogoJavascript key="js" title="JavaScript" />,
-      <BiLogoHtml5 key="html" title="HTML" />,
-      <BiLogoCss3 key="css" title="CSS" />,
-      <SiGreensock key="greensock" title="GSAP" />,
+      ...nextTsTailwind,
+      <BiLogoReact key="react" title="React" />,
     ],
-    imageSrc: "/projects/sentfi.jpg",
+    imageSrc: "/projects/kurenode.png",
   },
 ];

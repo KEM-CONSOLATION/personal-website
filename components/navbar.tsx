@@ -42,7 +42,7 @@ export const Navbar = ({ animationDelay = 0.5 }: NavbarProps) => {
           >
             <Image
               src={logoSrc}
-              alt="Jeremiah Aworetan logo"
+              alt="Consolation Lotachi Kem logo"
               width={32}
               height={32}
               className="h-7 w-7 invert sm:h-8 sm:w-8 dark:invert-0"
