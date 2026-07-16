@@ -12,11 +12,21 @@ This website contains information about my work as a senior frontend engineer, i
 
 ## Projects
 
+- [NPF Connect](https://play.google.com/store/apps/details?id=gov.npfconnect.app): Communication and operations platform for Nigerian Police Force officers with web dashboard and mobile app.
+
+- [Nexkro LMS](https://nexkro.com): Learning management system frontend for courses, academy onboarding, and talent development.
+
+- [Growth Group Systems](https://www.growthgroupsystems.online/home): Nationwide Dominion City growth-group platform with leadership workspaces, rosters, reports, and national oversight.
+
 - [HOME-CELL](https://www.crshomecell.online): Church management platform for Salvation Ministries Home Fellowship with role-based dashboards, real-time KPIs, attendance tracking, and PWA support.
 
 - [CHAAD Energy](https://www.chaadenergy.com): Corporate website for an engineering and energy services firm with dynamic services, projects, careers, and news powered by REST APIs and Cloudinary.
 
 - [CHAAD Engineering](https://www.chaadengineering.com): Enterprise website for ISO 9001–certified oil and gas engineering specialists with cinematic hero carousels, services catalogs, and SEO-optimized pages.
+
+- [Ecomarine](https://site.ecomarinegroup.com): Maritime services website for container services, terminal operations, and shipping solutions.
+
+- [MagicGames](https://playmagic.ng/): Gaming platform with user authentication, campaign systems, OTP verification, and subscription management.
 
 - [BoroFuel](https://borofuel.org): Landing page for a fuel access and station-partner app connecting approved drivers with designated filling stations.
 
@@ -24,14 +34,13 @@ This website contains information about my work as a senior frontend engineer, i
 
 - [Troo](https://troohq.com): Restaurant management software for hospitality businesses managing front-of-house, kitchen operations, and payment processing.
 
-- [Ecomarine](https://site.ecomarinegroup.com): Maritime services website for container services, terminal operations, and shipping solutions.
 
-- [MagicGames](https://playmagic.ng/): Gaming platform with user authentication, campaign systems, OTP verification, and subscription management.
 
 ## Contact
 
+- Email: consolationlotachi@gmail.com
+- WhatsApp: +234 703 189 6845
 - GitHub: https://github.com/KEM-CONSOLATION
 - LinkedIn: https://ng.linkedin.com/in/kem-consolation
 - Twitter: https://x.com/Techie_Conso
 - YouTube: https://www.youtube.com/@TechieConso
-- WhatsApp: +234 703 189 6845

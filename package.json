@@ -4,6 +4,7 @@
   "description": "Consolation Lotachi Kem's personal website.",
   "author": {
     "name": "Consolation Lotachi Kem",
+    "email": "consolationlotachi@gmail.com",
     "url": "https://techieconso.vercel.app"
   },
   "license": "BSD-3-Clause",

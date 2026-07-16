@@ -1,17 +1,12 @@
 "use client";
-import { useState } from "react";
-import { ImSpinner9 } from "react-icons/im";
-import { BiSolidPaperPlane } from "react-icons/bi";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { GooeyToaster } from "goey-toast";
 
-import { handleSubmit } from "@/utils/handleSubmit";
 import { fadeInAnimation } from "@/utils/framerAnimations";
-import { Breadcrumbs, InputField } from "@/components";
+import { Breadcrumbs } from "@/components";
 
 export default function Page() {
-  const [isLoading, setIsLoading] = useState(false);
-
   return (
     <>
       <Breadcrumbs
@@ -26,15 +21,15 @@ export default function Page() {
           {...fadeInAnimation}
         >
           <motion.div className="page-content" {...fadeInAnimation}>
-            <div className="z-10 mx-auto flex flex-col items-center justify-center gap-20 px-2 pt-36 pb-16 sm:px-8 lg:flex-row lg:py-20">
-              <article className="z-10 grid max-w-2xl flex-1 gap-10 text-center">
+            <div className="z-10 mx-auto flex max-w-2xl flex-col items-center justify-center gap-16 px-2 pt-36 pb-16 text-center sm:px-8 lg:py-20">
+              <article className="z-10 grid gap-10">
                 <div className="space-y-5">
                   <h1 className="text-3xl font-black tracking-widest uppercase">
                     Contact
                   </h1>
-                  <p className="max-w-lg text-sm leading-loose tracking-wider text-neutral-600 dark:text-gray-400">
-                    Messages get delivered to my email. I&apos;ll get back to
-                    you as soon as possible.
+                  <p className="mx-auto max-w-lg text-sm leading-loose tracking-wider text-neutral-600 dark:text-gray-400">
+                    Reach me directly via email or WhatsApp. I&apos;ll get back
+                    to you as soon as possible.
                   </p>
                 </div>
 
@@ -53,6 +48,22 @@ export default function Page() {
 
                   <div className="grid gap-2">
                     <h2 className="text-lg font-bold tracking-widest">
+                      WhatsApp
+                    </h2>
+                    <p className="leading-loose tracking-wider text-neutral-600 dark:text-gray-400">
+                      <a
+                        href="https://wa.me/2347031896845"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline-offset-2 hover:underline"
+                      >
+                        +234 703 189 6845
+                      </a>
+                    </p>
+                  </div>
+
+                  <div className="grid gap-2">
+                    <h2 className="text-lg font-bold tracking-widest">
                       Time Zone
                     </h2>
                     <p className="leading-loose tracking-wider text-neutral-600 dark:text-gray-400">
@@ -62,61 +73,25 @@ export default function Page() {
                 </div>
               </article>
 
-              <form
-                onSubmit={(event) => handleSubmit({ event, setIsLoading })}
-                method="POST"
-                className="grid w-full max-w-xl flex-1 gap-10 rounded-xl backdrop-blur-sm backdrop-filter md:bg-neutral-100/30 md:p-14 md:shadow-xl dark:md:bg-neutral-900/30"
-              >
-                <h1 className="text-center text-2xl font-black tracking-widest uppercase sm:text-3xl">
-                  Contact Form
-                </h1>
+              <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+                <a
+                  href="mailto:consolationlotachi@gmail.com"
+                  className="inline-flex w-full max-w-xs cursor-pointer items-center justify-center gap-3 rounded-xl bg-neutral-200 px-8 py-4 text-sm tracking-wider uppercase shadow-2xl transition-all hover:-translate-y-1 active:translate-y-1 dark:bg-zinc-800"
+                >
+                  <BiLogoGmail className="text-xl" />
+                  <span>Email Me</span>
+                </a>
 
-                <p className="text-center text-sm tracking-wider text-neutral-600 dark:text-gray-400">
-                  It actually works, I promise :)
-                </p>
-
-                <div className="grid gap-8">
-                  <InputField type="text" name="name" placeholder="Your name" />
-                  <InputField
-                    type="email"
-                    name="email"
-                    placeholder="Your email"
-                  />
-                  <InputField
-                    textarea
-                    name="message"
-                    placeholder="Message"
-                    rows={2}
-                  />
-
-                  <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="bg-opacity-30 mx-auto mt-4 flex w-fit flex-row items-center justify-center gap-3 rounded-xl bg-neutral-200 px-10 py-4 tracking-wider uppercase shadow-2xl transition-all hover:-translate-y-1 active:translate-y-1 disabled:animate-pulse disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:-translate-y-0 dark:bg-zinc-800"
-                  >
-                    <span>{isLoading ? "Sending..." : "Send Message"}</span>
-                    {isLoading ? (
-                      <ImSpinner9 className="animate-spin text-xl" />
-                    ) : (
-                      <BiSolidPaperPlane className="text-xl" />
-                    )}
-                  </button>
-                </div>
-
-                {isLoading && (
-                  <motion.p
-                    className="mt-4 text-center text-sm text-neutral-600 dark:text-gray-400"
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    Please wait 30 seconds to 1 minute for message delivery.
-                  </motion.p>
-                )}
-              </form>
-
-              <GooeyToaster position="bottom-right" />
+                <a
+                  href="https://wa.me/2347031896845?text=Hello!%20I'd%20like%20to%20get%20in%20touch."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full max-w-xs cursor-pointer items-center justify-center gap-3 rounded-xl bg-neutral-200 px-8 py-4 text-sm tracking-wider uppercase shadow-2xl transition-all hover:-translate-y-1 active:translate-y-1 dark:bg-zinc-800"
+                >
+                  <FaWhatsapp className="text-xl" />
+                  <span>WhatsApp Me</span>
+                </a>
+              </div>
             </div>
           </motion.div>
         </motion.main>

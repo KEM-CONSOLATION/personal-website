@@ -7,10 +7,13 @@ import { DECORATIVE_LINE_CLASS, SITE_CHROME_STACK_GAP } from "../utils/siteChrom
 
 export const Socials = () => {
   return (
-    <motion.div className="fixed inset-x-0 bottom-6 z-10" {...fadeInAnimation}>
+    <motion.div
+      className="pointer-events-none fixed inset-x-0 bottom-6 z-10"
+      {...fadeInAnimation}
+    >
       <div className="mx-auto flex w-full items-center sm:container">
         <div
-          className={`flex flex-col items-center ${SITE_CHROME_STACK_GAP} pl-4 text-xl text-neutral-600 sm:pl-6 dark:text-gray-400`}
+          className={`pointer-events-auto flex flex-col items-center ${SITE_CHROME_STACK_GAP} pl-4 text-xl text-neutral-600 sm:pl-6 dark:text-gray-400`}
         >
           <span className={DECORATIVE_LINE_CLASS} />
 

@@ -6,6 +6,7 @@ import {
 } from "react-icons/bi";
 import {
   SiFramer,
+  SiGoogleplay,
   SiNextdotjs,
   SiSanity,
 } from "react-icons/si";
@@ -22,6 +23,62 @@ const nextTsTailwindFramer = [
 ];
 
 export const projectsData: ProjectData[] = [
+  {
+    name: "Growth Group Systems",
+    link: "https://www.growthgroupsystems.online/home",
+    description:
+      "Nationwide church growth-group platform for Dominion City—rosters, reports, and leadership workspaces.",
+    detailedDescription:
+      "Growth Group Systems coordinates neighbourhood fellowships across Nigeria with one leadership platform. It spans public storytelling (journey, gallery, social-impact projects) and a secure leadership workspace for managers and pastors—group registry, rosters & visitors, meeting and project reports, semester planning, analytics, and national oversight across 37 state workspaces. Cross River is the live pilot with nationwide expansion underway.",
+    logos: nextTsTailwind,
+    imageSrc: "/projects/growth-groups.png",
+  },
+  {
+    name: "Ecomarine",
+    link: "https://site.ecomarinegroup.com",
+    description:
+      "Maritime services website for container services and terminal operations.",
+    detailedDescription:
+      "A modern maritime services website for Ecomarine, featuring comprehensive information about container services, terminal operations, and shipping solutions. Built with Next.js and includes features like blog management, career listings, FAQ system, and responsive design optimized for the maritime industry.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/ecomarinegroup.png",
+  },
+  {
+    name: "MagicGames",
+    link: "http://playmagic.ng/",
+    description:
+      "Gaming platform with authentication, campaigns, and dashboard functionality.",
+    detailedDescription:
+      "A gaming platform built with Next.js featuring user authentication, game management, campaign systems, and dashboard functionality. The platform includes phone verification, OTP authentication, subscription management, and a comprehensive gaming experience with real-time updates and user engagement features.",
+    logos: [
+      ...nextTsTailwind,
+      <BiLogoReact key="react" title="React" />,
+    ],
+    imageSrc: "/projects/playmagic.png",
+  },
+  {
+    name: "NPF Connect",
+    link: "https://play.google.com/store/apps/details?id=gov.npfconnect.app",
+    description:
+      "Communication and operations platform for Nigerian Police Force officers.",
+    detailedDescription:
+      "NPF Connect is a multi-platform communication and operations system that enhances officer communication, community engagement, and service delivery. The product includes a web leadership dashboard for forums, community, wallet, transactions, rewards, and announcements, alongside a mobile app for forums chat, communities, rewards, and profile management. Available on the Google Play Store.",
+    logos: [
+      ...nextTsTailwind,
+      <SiGoogleplay className="text-lg" key="googleplay" title="Google Play Store" />,
+    ],
+    imageSrc: "/projects/npf-connect.png",
+  },
+  {
+    name: "Nexkro LMS",
+    link: "https://nexkro.com",
+    description:
+      "Learning management system frontend for courses, academy onboarding, and talent development.",
+    detailedDescription:
+      "Nexkro LMS is the learning management system frontend for Nexkro—helping businesses and individuals grow in a digital-first world. The platform showcases services, courses, and academy enrollment flows with a responsive marketing and product experience. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion, featuring academy CTAs, course discovery, and a modern multi-device UI.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/nexkro-lms.png",
+  },
   {
     name: "HOME-CELL (Salvation Ministries)",
     link: "https://www.crshomecell.online",
@@ -85,16 +142,7 @@ export const projectsData: ProjectData[] = [
     logos: nextTsTailwindFramer,
     imageSrc: "/projects/blunttribe.png",
   },
-  {
-    name: "Nexkro",
-    link: "https://nexkro.com",
-    description:
-      "Next.js application with carousel components, animations, and email services.",
-    detailedDescription:
-      "A modern Next.js application featuring carousel components, animations, and email functionality. Built with the latest Next.js 16, React 19, and TypeScript. Includes Framer Motion for smooth animations, Embla Carousel for interactive components, and Resend for email services.",
-    logos: nextTsTailwindFramer,
-    imageSrc: "/projects/nexkro.png",
-  },
+  
   {
     name: "Aerysyn",
     link: "https://aerysyn.com/",
@@ -105,19 +153,7 @@ export const projectsData: ProjectData[] = [
     logos: nextTsTailwindFramer,
     imageSrc: "/projects/aerysyn.png",
   },
-  {
-    name: "MagicGames",
-    link: "http://playmagic.ng/",
-    description:
-      "Gaming platform with authentication, campaigns, and dashboard functionality.",
-    detailedDescription:
-      "A gaming platform built with Next.js featuring user authentication, game management, campaign systems, and dashboard functionality. The platform includes phone verification, OTP authentication, subscription management, and a comprehensive gaming experience with real-time updates and user engagement features.",
-    logos: [
-      ...nextTsTailwind,
-      <BiLogoReact key="react" title="React" />,
-    ],
-    imageSrc: "/projects/playmagic.png",
-  },
+ 
   {
     name: "Premium & Classy",
     link: "https://premiumandclassy.netlify.app",
@@ -164,29 +200,7 @@ export const projectsData: ProjectData[] = [
     ],
     imageSrc: "/projects/troohq.png",
   },
-  {
-    name: "Growth Group DC Website",
-    link: "https://dc-calabar.netlify.app",
-    description:
-      "Church management platform with events, blog, audio messages, and reports.",
-    detailedDescription:
-      "A comprehensive church management platform built with Next.js and Sanity CMS. Features include event management, blog system, audio messages, weekly reports, and department management. The platform serves as a digital hub for church members with real-time content updates, member engagement tools, and administrative dashboards.",
-    logos: [
-      ...nextTsTailwind,
-      <SiSanity className="text-lg" key="sanity" title="Sanity CMS" />,
-    ],
-    imageSrc: "/projects/growth-groups.png",
-  },
-  {
-    name: "Ecomarine",
-    link: "https://site.ecomarinegroup.com",
-    description:
-      "Maritime services website for container services and terminal operations.",
-    detailedDescription:
-      "A modern maritime services website for Ecomarine, featuring comprehensive information about container services, terminal operations, and shipping solutions. Built with Next.js and includes features like blog management, career listings, FAQ system, and responsive design optimized for the maritime industry.",
-    logos: nextTsTailwindFramer,
-    imageSrc: "/projects/ecomarinegroup.png",
-  },
+  
   {
     name: "Kurenode",
     link: "https://qproxim.netlify.app",
