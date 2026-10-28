@@ -25,6 +25,16 @@ const nextTsTailwindFramer = [
 
 export const projectsData: ProjectData[] = [
   {
+    name: "EliPay",
+    link: "https://www.accessearlypay.com",
+    description:
+      "Earned wage access platform for employees—withdraw early, pay bills, stay in control.",
+    detailedDescription:
+      "EliPay (EarlyPay) is an earned wage access platform that lets eligible employees access up to 50% of wages already earned before payday. Built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and Zustand. Features employee and employer experiences, wage withdrawal to bank accounts, bill payments (airtime, data, electricity, TV), attendance-linked earnings, transaction history, and employer dashboards for payroll visibility and disbursement analytics.",
+    logos: nextTsTailwindFramer,
+    imageSrc: "/projects/elipay.jpg",
+  },
+  {
     name: "CountPadi",
     link: "https://www.countpadi.com",
     description:
