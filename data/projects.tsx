@@ -25,6 +25,19 @@ const nextTsTailwindFramer = [
 
 export const projectsData: ProjectData[] = [
   {
+    name: "CoLabourer",
+    link: "https://colabourer.com",
+    description:
+      "Multi-tenant church management platform for people, gatherings, care, and HQ oversight.",
+    detailedDescription:
+      "CoLabourer is a multi-tenant church management system (ChMS) built with Next.js, TypeScript, Tailwind CSS, Prisma, and Supabase Postgres. Churches operate as tenants with an org tree (Country → State → Branch), custom desk roles, and scoped access. Features include member and household management, first timers, new converts, Soul Tracker, QR check-in, discipleship, kids ministry, pastoral care workflows, finance/reporting exports, PWA support, and platform-admin tools for plans, feature flags, and HQ merges.",
+    logos: [
+      ...nextTsTailwindFramer,
+      <SiPostgresql className="text-lg" key="postgres" title="PostgreSQL / Supabase" />,
+    ],
+    imageSrc: "/projects/colabourer.png",
+  },
+  {
     name: "EliPay",
     link: "https://www.accessearlypay.com",
     description:
